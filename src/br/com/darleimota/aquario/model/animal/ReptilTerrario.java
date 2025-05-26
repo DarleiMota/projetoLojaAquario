@@ -5,8 +5,8 @@ public class ReptilTerrario extends AnimalBase {
     private int umidadeIdeal;
     private boolean necessitaLuzUV;
 
-    public ReptilTerrario(String nome, int idade, String especie, String descricao, int umidadeIdeal, boolean necessitaLuzUV) {
-        super(nome, idade, especie, descricao);
+    public ReptilTerrario(String nome, int idade, String especie, String descricao, int umidadeIdeal, boolean necessitaLuzUV,String comportamento) {
+        super(nome, idade, especie, descricao, comportamento);
         this.umidadeIdeal = umidadeIdeal;
         this.necessitaLuzUV = necessitaLuzUV;
     }
@@ -59,7 +59,7 @@ public class ReptilTerrario extends AnimalBase {
                 """,
                 getNome(), getIdade(), getEspecie(), getDescricao(),
                 umidadeIdeal, necessitaLuzUV ? "Sim" : "Não",
-                "Gosta de se aquecer sob luzes e escalar rochas."
+                getComportamento()
         );
     }
 }

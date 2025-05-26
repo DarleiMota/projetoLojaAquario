@@ -5,8 +5,8 @@ public class PeixeAguaDoce extends AnimalBase {
     private double pHIdeal;
     private int temperaturaIdeal;
 
-    public PeixeAguaDoce(String nome, int idade, String especie, String descricao, double pHIdeal, int temperaturaIdeal) {
-        super(nome, idade, especie, descricao);
+    public PeixeAguaDoce(String nome, int idade, String especie, String descricao, double pHIdeal, int temperaturaIdeal,String comportamento) {
+        super(nome, idade, especie, descricao, comportamento);
         this.pHIdeal = pHIdeal;
         this.temperaturaIdeal = temperaturaIdeal;
     }
@@ -59,8 +59,7 @@ public class PeixeAguaDoce extends AnimalBase {
                 =====================================
                 """,
                 getNome(), getIdade(), getEspecie(), getDescricao(),
-                pHIdeal, temperaturaIdeal,
-                "Nada em cardumes e prefere aquários plantados."
+                pHIdeal, temperaturaIdeal,getComportamento()
         );
     }
 }

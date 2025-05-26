@@ -5,9 +5,8 @@ public class PeixeAguaSalgada extends AnimalBase {
     private double salinidade;
     private int tamanhoAquarioMinimo;
 
-    public PeixeAguaSalgada(String nome, int idade, String especie, String descricao,
-                            double salinidade, int tamanhoAquarioMinimo) {
-        super(nome, idade, especie, descricao);
+    public PeixeAguaSalgada(String nome, int idade, String especie, String descricao, double salinidade, int tamanhoAquarioMinimo,String comportamento) {
+        super(nome, idade, especie, descricao, comportamento);
         this.salinidade = salinidade;
         this.tamanhoAquarioMinimo = tamanhoAquarioMinimo;
     }
@@ -60,8 +59,7 @@ public class PeixeAguaSalgada extends AnimalBase {
                 =====================================
                 """,
                 getNome(), getIdade(), getEspecie(), getDescricao(),
-                salinidade, tamanhoAquarioMinimo,
-                "Territorial, requer corais e esconderijos."
+                salinidade, tamanhoAquarioMinimo,getComportamento()
         );
     }
 }

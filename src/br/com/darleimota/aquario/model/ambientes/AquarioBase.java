@@ -13,7 +13,6 @@ public abstract class AquarioBase implements Aquario {
         this.animals = new ArrayList<>();
     }
 
-
     @Override
     public void adicionarAnimal(Animal animal) {
         animals.add(animal);
@@ -40,7 +39,6 @@ public abstract class AquarioBase implements Aquario {
                 System.out.println(pControle);
             }
         }
-
     }
 
     @Override
@@ -52,6 +50,5 @@ public abstract class AquarioBase implements Aquario {
         }
         return null;
     }
-
 }
 

@@ -5,7 +5,6 @@ import br.com.darleimota.aquario.model.animal.PeixeAguaDoce;
 
 public class AquarioAguaDoce extends AquarioBase {
 
-
     @Override
     public void adicionarAnimal(Animal animal) {
         if (animal instanceof PeixeAguaDoce) {
@@ -14,7 +13,6 @@ public class AquarioAguaDoce extends AquarioBase {
             System.out.println("Somente peixes de água doce são permitidos neste aquário.");
         }
     }
-
 
     @Override
     public void listarAnimal() {
